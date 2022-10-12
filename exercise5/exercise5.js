@@ -23,7 +23,7 @@ class AreaCalculator {
       return x.side * x.side;
     } else if (x instanceof Rectangle) {
       return x.height * x.width;
-    } else (x instanceof Circle) {
+    } else if (x instanceof Circle) {
       return Math.PI * Math.pow(x.radius, 2);
     }
   }
