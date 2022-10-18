@@ -7,7 +7,7 @@ const person = {
 
 const json = JSON.stringify(
   Object.entries(person).filter(
-    ([key]) => key.includes("id") || key.includes("age")
+    (key) => key.includes("id") || key.includes("age")
   )
 );
 
