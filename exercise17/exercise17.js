@@ -5,9 +5,11 @@ const person = {
   age: 25,
 };
 
-const json = JSON.stringify(
-  Object.entries(person).filter(
-    (key) => key.includes("id") || key.includes("age")
+const json = JSON.parse(
+  JSON.stringify(
+    Object.entries(person).filter(
+      (key) => key.includes("id") || key.includes("age")
+    )
   )
 );
 
